@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import styles from './FullPost.module.css';
 
 class FullPost extends Component {
-    render () {
+    render() {
         let post = <p>Please select a Post!</p>;
         post = (
             <div className={styles.FullPost}>
