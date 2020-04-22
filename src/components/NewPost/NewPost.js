@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from "axios";
 
 import styles from "./NewPost.module.css";
 
@@ -7,6 +8,18 @@ class NewPost extends Component {
         title: '',
         content: '',
         author: 'Nikola',
+    };
+
+    postDataHandler = () => {
+        const data = {
+           title: this.state.title,
+           body: this.state.content,
+           author: this.state.author,
+        };
+        axios.post('https://jsonplaceholder.typicode.com/posts', data)
+            .then(response => {
+                console.log(response);
+            });
     };
 
     render() {
@@ -24,7 +37,7 @@ class NewPost extends Component {
                     <option value="Nikola">Nikola</option>
                     <option value="Maria">Maria</option>
                 </select>
-                <button>Add Post</button>
+                <button onClick={this.postDataHandler}>Add Post</button>
             </div>
         );
     }
