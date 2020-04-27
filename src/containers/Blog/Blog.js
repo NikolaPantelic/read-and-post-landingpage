@@ -15,7 +15,7 @@ class Blog extends Component {
                             <li><NavLink to="/" exact activeStyle={{
                                 color: "#fa923f",
                                 textTransform: "uppercase"
-                            }}>Home</NavLink></li>
+                            }}>Posts</NavLink></li>
                             <li><NavLink to="/new-post" activeStyle={{
                                 color: "#fa923f",
                                 textTransform: "uppercase"
