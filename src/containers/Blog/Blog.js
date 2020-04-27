@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import styles from "./Blog.module.css";
 import Posts from "../Posts/Posts";
-import {Route, Link} from "react-router-dom";
+import {Route, NavLink} from "react-router-dom";
 import NewPost from "../NewPost/NewPost";
 
 class Blog extends Component {
@@ -11,8 +11,14 @@ class Blog extends Component {
                 <header>
                     <nav>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/new-post">New Post</Link></li>
+                            <li><NavLink to="/" exact activeStyle={{
+                                color: "#fa923f",
+                                textTransform: "uppercase"
+                            }}>Home</NavLink></li>
+                            <li><NavLink to="/new-post" activeStyle={{
+                                color: "#fa923f",
+                                textTransform: "uppercase"
+                            }}>New Post</NavLink></li>
                         </ul>
                     </nav>
                 </header>
