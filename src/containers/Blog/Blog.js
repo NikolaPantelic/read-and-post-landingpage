@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import styles from "./Blog.module.css";
-import Posts from "../Posts/Posts";
+import Posts from "./Posts/Posts";
 import {Route, NavLink, Switch} from "react-router-dom";
-import NewPost from "../NewPost/NewPost";
+import NewPost from "./NewPost/NewPost";
 
 class Blog extends Component {
     render() {
