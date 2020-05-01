@@ -1,5 +1,5 @@
 # Read & Post
-Read & Post is landing page which interact with web
+Read & Post is landing page which interact with web data
 
 ## Description
 
